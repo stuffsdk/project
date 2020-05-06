@@ -1,0 +1,6 @@
+#Below line should uncomment on production
+IndexIgnore *
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !static/
+RewriteRule ^(.+)$ index.php [QSA,L]
